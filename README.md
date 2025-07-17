@@ -36,8 +36,8 @@ cd backend
 # Install packages
 npm install
 
-# Create the .env file from the example
-cp .env.example .env
+# Create the .env file 
+cp .env
 ```
 **Next, open the newly created `.env` file and add your credentials.** You must provide a valid `GMAIL_USER` and a 16-character Google **App Password** for `GMAIL_APP_PASS` to send real emails.
 
