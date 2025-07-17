@@ -1,0 +1,135 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 0.75rem; /* 12px */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  color: var(--gray-500);
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.modal-close-button:hover {
+  color: var(--gray-700);
+}
+
+.modal-header {
+  margin-bottom: 1.5rem;
+}
+
+.modal-icon {
+  background-color: var(--success-green);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.check-icon {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 0.5rem;
+}
+
+.modal-body {
+  text-align: left;
+  color: var(--gray-700);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.modal-body p {
+  margin-bottom: 0.75rem;
+}
+
+.what-next-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.next-steps-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.next-steps-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  margin-bottom: 0.25rem;
+}
+
+.modal-footer {
+  margin-top: 2rem;
+}
+
+.modal-button {
+  background-color: var(--primary-blue);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal-button:hover {
+  background-color: var(--secondary-blue);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

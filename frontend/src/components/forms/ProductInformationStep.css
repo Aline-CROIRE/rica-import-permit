@@ -1,0 +1,9 @@
+/* Specific styles for ProductInformationStep if needed */
+.form-group .required {
+  color: var(--error-red);
+  margin-left: 0.25rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1; 
+}

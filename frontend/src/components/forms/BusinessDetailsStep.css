@@ -1,0 +1,5 @@
+/* Specific styles for BusinessDetailsStep if needed */
+.form-group .required {
+  color: var(--error-red);
+  margin-left: 0.25rem;
+}
