@@ -1,13 +1,12 @@
 /* src/pages/RICAImportPermit.css */
 
-/* === Main Page Layout (Irembo Style) === */
+/* === Main Page Layout (Irembo Style, Top-Aligned) === */
 .rica-import-permit-container {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 3rem 1rem;
+  align-items: center; /* This keeps the form horizontally centered */
+  padding: 4rem 1rem; /* Provides generous space at the top and bottom */
   background-color: #f7f7f7; /* Irembo's standard light gray background */
   box-sizing: border-box;
 }
@@ -16,7 +15,7 @@
 .rica-title {
   font-size: 2.25rem;
   font-weight: 600;
-  color: #333; /* Irembo's primary heading color */
+  color: #333;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -24,12 +23,12 @@
 /* === Form Card (Irembo Style) === */
 .form-card {
   background-color: #ffffff;
-  border-radius: 8px; /* Irembo uses slightly less rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* A very subtle, clean shadow */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   padding: 2.5rem 3rem;
   width: 100%;
   max-width: 800px;
-  border: 1px solid #e0e0e0; /* Irembo's subtle border color */
+  border: 1px solid #e0e0e0;
 }
 
 .rica-form {
@@ -68,34 +67,34 @@
 }
 
 .btn-primary {
-  background-color: #007bff; /* Irembo's primary blue */
+  background-color: #007bff;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 .btn-primary:disabled {
-  background-color: #c0c0c0; /* Irembo's disabled gray */
+  background-color: #c0c0c0;
   cursor: not-allowed;
 }
 
 .btn-secondary {
   background-color: #ffffff;
   color: #333;
-  border-color: #ccc; /* Irembo's standard gray border */
+  border-color: #ccc;
 }
 
 .btn-secondary:hover {
-  background-color: #f2f2f2; /* Light gray background on hover */
+  background-color: #f2f2f2;
   border-color: #bbb;
 }
 
 /* === Responsive Adjustments (Irembo Style) === */
 @media (max-width: 768px) {
   .rica-import-permit-container {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .form-card {
@@ -105,7 +104,7 @@
   .form-navigation {
     flex-direction: column-reverse;
     gap: 1rem;
-    align-items: stretch; /* Make buttons full-width */
+    align-items: stretch;
   }
 
   .btn {
@@ -119,7 +118,7 @@
 
 @media (max-width: 480px) {
   .rica-import-permit-container {
-    padding: 1rem 0; /* Remove side padding on mobile */
+    padding: 1rem 0;
   }
   .form-card {
     padding: 1.5rem 1rem;

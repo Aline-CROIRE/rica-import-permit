@@ -1,43 +1,38 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --primary-blue: #007bff; 
+  --secondary-blue: #0056b3; 
+  --light-blue: #f2f8ff; 
+  
+  --error-red: #dc3545; 
+  --success-green: #28a745; 
+
+ 
+  --gray-50: #f8f9fa;
+  --gray-100: #f2f2f2;
+  --gray-200: #e0e0e0;
+  --gray-300: #ced4da;
+  --gray-500: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #333333; 
+}
+
+
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: #f7f7f7;
+  color: var(--gray-800);
   line-height: 1.6;
   font-size: 16px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-:root {
-  --primary-blue: #1a73e8;
-  --primary-green: #34a853;
-  --secondary-blue: #4285f4;
-  --light-blue: #e8f0fe;
-  --success-green: #34a853;
-  --warning-yellow: #fbbc05;
-  --error-red: #ea4335;
-
-  --gray-50: #f8f9fa;
-  --gray-100: #e9ecef;
-  --gray-200: #dee2e6;
-  --gray-300: #ced4da;
-  --gray-400: #adb5bd;
-  --gray-500: #6c757d;
-  --gray-600: #495057;
-  --gray-700: #343a40;
-  --gray-800: #212529;
-  --gray-900: #1a1d20;
 }
 
 html {
@@ -50,20 +45,20 @@ html {
   flex-direction: column;
 }
 
+
 .form-input,
 .form-select,
 .form-textarea {
   width: 100%;
-  padding: 0.85rem 1rem;
-  border: 1px solid var(--gray-300);
-  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc; 
+  border-radius: 6px; 
   font-size: 1rem;
   line-height: 1.5;
   color: var(--gray-800);
-  background-color: #fff;
+  background-color: #ffffff;
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   font-family: inherit;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .form-input:focus,
@@ -71,7 +66,7 @@ html {
 .form-textarea:focus {
   border-color: var(--primary-blue);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.25);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
 }
 
 .form-input::placeholder,
@@ -79,19 +74,8 @@ html {
   color: var(--gray-500);
 }
 
-*:focus {
-  outline: 2px solid var(--primary-blue);
-  outline-offset: 2px;
-}
-
 .form-group .required {
   color: var(--error-red);
   margin-left: 0.25rem;
-  font-weight: normal; 
-}
-
-@media print {
-  .no-print {
-    display: none !important;
-  }
+  font-weight: 500;
 }
