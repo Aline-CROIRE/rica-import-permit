@@ -1,43 +1,34 @@
+/* src/pages/RICAImportPermit.css */
 
 .rica-import-permit-container {
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem; 
-  background-color: #f4f7fc; 
-  box-sizing: border-box; 
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
 }
 
 .rica-title {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #1c3d5a; 
-  text-align: center;
-  margin-bottom: 2rem; 
-  letter-spacing: -0.025em;
-}
-
-.rica-description {
-  font-size: 1.1rem;
-  color: var(--gray-700);
+  color: #1a2b4d;
   text-align: center;
   margin-bottom: 2rem;
-  max-width: 800px;
-  line-height: 1.6;
+  letter-spacing: -0.02em;
 }
 
-
 .form-card {
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); /* A more modern, subtle shadow */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 30, 80, 0.08);
   padding: 2.5rem;
   width: 100%;
   max-width: 800px;
-  border: 1px solid var(--gray-100, #f3f4f6);
+  border: 1px solid #e9ecef;
 }
 
 .rica-form {
@@ -55,9 +46,9 @@
 }
 
 .btn {
-  padding: 0.85rem 1.75rem;
+  padding: 0.8rem 1.75rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -66,11 +57,16 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 .btn:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(-1px);
 }
 
 .btn-primary {
@@ -80,49 +76,47 @@
 
 .btn-primary:hover {
   background-color: var(--secondary-blue);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary:disabled {
-  background-color: var(--gray-400);
+  background-color: var(--gray-300);
   cursor: not-allowed;
-  box-shadow: none;
   transform: none;
+  box-shadow: none;
 }
 
 .btn-secondary {
-  background-color: #fff;
+  background-color: #ffffff;
   color: var(--primary-blue);
-  border: 1px solid var(--primary-blue);
+  border: 1px solid var(--gray-300);
 }
 
 .btn-secondary:hover {
-  background-color: var(--light-blue);
-  color: var(--primary-blue);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  background-color: var(--gray-50);
+  border-color: var(--gray-400);
 }
 
 .btn-secondary:disabled {
   color: var(--gray-500);
-  border-color: var(--gray-300);
+  border-color: var(--gray-200);
+  background-color: var(--gray-50);
   cursor: not-allowed;
-  background-color: var(--gray-100);
-  box-shadow: none;
   transform: none;
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
   .rica-import-permit-container {
-    padding: 1.5rem 1rem; 
-    justify-content: flex-start; 
+    padding: 1.5rem 1rem;
+    justify-content: flex-start;
   }
 
   .form-card {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .form-navigation {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
   }
 
@@ -132,20 +126,17 @@
 
   .rica-title {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .rica-description {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .rica-import-permit-container {
-    padding: 1rem; 
+    padding: 1rem 0.5rem;
   }
   .form-card {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
   }
 }
