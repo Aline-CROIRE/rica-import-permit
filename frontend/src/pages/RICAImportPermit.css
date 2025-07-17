@@ -1,34 +1,35 @@
 /* src/pages/RICAImportPermit.css */
 
+/* === Main Page Layout (Irembo Style) === */
 .rica-import-permit-container {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-  background-color: #f8f9fa;
+  padding: 3rem 1rem;
+  background-color: #f7f7f7; /* Irembo's standard light gray background */
   box-sizing: border-box;
 }
 
+/* === Page Title (Irembo Style) === */
 .rica-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a2b4d;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #333; /* Irembo's primary heading color */
   text-align: center;
   margin-bottom: 2rem;
-  letter-spacing: -0.02em;
 }
 
+/* === Form Card (Irembo Style) === */
 .form-card {
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 30, 80, 0.08);
-  padding: 2.5rem;
+  border-radius: 8px; /* Irembo uses slightly less rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* A very subtle, clean shadow */
+  padding: 2.5rem 3rem;
   width: 100%;
   max-width: 800px;
-  border: 1px solid #e9ecef;
+  border: 1px solid #e0e0e0; /* Irembo's subtle border color */
 }
 
 .rica-form {
@@ -37,78 +38,64 @@
   gap: 2rem;
 }
 
+/* === Navigation & Buttons (Irembo Style) === */
 .form-navigation {
   display: flex;
   justify-content: space-between;
-  margin-top: 2.5rem;
+  align-items: center;
+  margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--gray-200);
+  border-top: 1px solid #e0e0e0;
 }
 
 .btn {
-  padding: 0.8rem 1.75rem;
-  border: none;
-  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
   text-decoration: none;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.btn:active {
-  transform: translateY(-1px);
+.btn:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
 }
 
 .btn-primary {
-  background-color: var(--primary-blue);
+  background-color: #007bff; /* Irembo's primary blue */
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: var(--secondary-blue);
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 .btn-primary:disabled {
-  background-color: var(--gray-300);
+  background-color: #c0c0c0; /* Irembo's disabled gray */
   cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
 }
 
 .btn-secondary {
   background-color: #ffffff;
-  color: var(--primary-blue);
-  border: 1px solid var(--gray-300);
+  color: #333;
+  border-color: #ccc; /* Irembo's standard gray border */
 }
 
 .btn-secondary:hover {
-  background-color: var(--gray-50);
-  border-color: var(--gray-400);
+  background-color: #f2f2f2; /* Light gray background on hover */
+  border-color: #bbb;
 }
 
-.btn-secondary:disabled {
-  color: var(--gray-500);
-  border-color: var(--gray-200);
-  background-color: var(--gray-50);
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
-
+/* === Responsive Adjustments (Irembo Style) === */
 @media (max-width: 768px) {
   .rica-import-permit-container {
     padding: 1.5rem 1rem;
-    justify-content: flex-start;
   }
 
   .form-card {
@@ -118,6 +105,7 @@
   .form-navigation {
     flex-direction: column-reverse;
     gap: 1rem;
+    align-items: stretch; /* Make buttons full-width */
   }
 
   .btn {
@@ -125,18 +113,19 @@
   }
 
   .rica-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 480px) {
   .rica-import-permit-container {
-    padding: 1rem 0.5rem;
+    padding: 1rem 0; /* Remove side padding on mobile */
   }
   .form-card {
     padding: 1.5rem 1rem;
     border-radius: 0;
     box-shadow: none;
-    border: none;
+    border-left: none;
+    border-right: none;
   }
 }
