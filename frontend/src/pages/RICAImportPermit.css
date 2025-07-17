@@ -1,17 +1,14 @@
-/* src/pages/RICAImportPermit.css */
 
-/* === Main Page Layout (Irembo Style, Top-Aligned) === */
 .rica-import-permit-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This keeps the form horizontally centered */
-  padding: 4rem 1rem; /* Provides generous space at the top and bottom */
-  background-color: #f7f7f7; /* Irembo's standard light gray background */
+  align-items: center; 
+  padding: 4rem 1rem; 
+  background-color: #f7f7f7; 
   box-sizing: border-box;
 }
 
-/* === Page Title (Irembo Style) === */
 .rica-title {
   font-size: 2.25rem;
   font-weight: 600;
@@ -20,7 +17,7 @@
   margin-bottom: 2rem;
 }
 
-/* === Form Card (Irembo Style) === */
+
 .form-card {
   background-color: #ffffff;
   border-radius: 8px;
@@ -37,7 +34,7 @@
   gap: 2rem;
 }
 
-/* === Navigation & Buttons (Irembo Style) === */
+
 .form-navigation {
   display: flex;
   justify-content: space-between;
@@ -91,7 +88,7 @@
   border-color: #bbb;
 }
 
-/* === Responsive Adjustments (Irembo Style) === */
+
 @media (max-width: 768px) {
   .rica-import-permit-container {
     padding: 2rem 1rem;
