@@ -4,15 +4,15 @@ This is a full-stack application for the RICA Import Permit service, built for t
 
 ---
 
-## 🎥 Live Demo
+##  Live Demo
 
 A live, deployed version of the application can be accessed here:
 
-**➡️ [https://rica-import-permit.vercel.app/](https://rica-import-permit.vercel.app/)**
+**➡ [https://rica-import-permit.vercel.app/](https://rica-import-permit.vercel.app/)**
 
 ---
 
-## 🛠️ Local Setup Instructions
+##  Local Setup Instructions
 
 ### Prerequisites
 -   Node.js (v16 or higher)
@@ -54,7 +54,7 @@ npm install
 
 ---
 
-## 🚀 Running the Application
+##  Running the Application
 
 You must have two terminals running simultaneously.
 
