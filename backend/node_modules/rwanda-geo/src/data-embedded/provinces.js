@@ -1,0 +1,3 @@
+// Auto-generated embedded data for provinces
+// This file contains base64-encoded gzipped JSON data
+export default "H4sIAAAAAAACE52PvQrCMBRGX6V8cwrxb8kqToIUHTqIQ4iXGIyJpKkipe8u2kIQLGjHew+cw7dvoPyRILAtcz4Bg5OX17k2WlqTLU18gKGytYbA+f3MVfdU5CIFiAZWRgjOYJ2G4G3LPqzTZN35Op4ouKwI/macouSuepRfE/q1MEuFkqr4PXDvyBj/PPk3PgwtcD0aU1ikwkoOLSD5x4LDE2chAc3bAQAA";
