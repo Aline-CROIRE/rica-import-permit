@@ -1,17 +1,14 @@
 # RICA Import Permit Application Service
 
-![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js)
-![Express.js](https://img.shields.io/badge/Express-API-000000?style=for-the-badge&logo=express)
-
 This is a full-stack application for the RICA Import Permit service, built for the Irembo Service Onboarding assessment. It features a multi-step React form and a Node.js/Express backend that handles validation, data persistence, and sends HTML email notifications.
 
 ---
 
-## 🎥 Project Demo
+## 🎥 Live Demo
 
-A complete video demonstration of the application can be viewed here:
+A live, deployed version of the application can be accessed here:
 
+**➡️ [https://rica-import-permit.vercel.app/](https://rica-import-permit.vercel.app/)**
 
 ---
 
@@ -22,7 +19,7 @@ A complete video demonstration of the application can be viewed here:
 -   Git
 
 ### 1. Clone the Repository
-Open your Git Bash terminal and clone the project.
+Open your terminal and clone the project.
 
 ```bash
 git clone [Your GitHub Repository URL]
@@ -40,7 +37,6 @@ cd backend
 npm install
 
 # Create the .env file from the example
-# (On Windows, you may need to manually copy .env.example to .env)
 cp .env.example .env
 ```
 **Next, open the newly created `.env` file and add your credentials.** You must provide a valid `GMAIL_USER` and a 16-character Google **App Password** for `GMAIL_APP_PASS` to send real emails.
